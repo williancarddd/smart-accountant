@@ -3,7 +3,7 @@ import { initialState } from ".";
 import { actionsTypesCrease } from "./actions-types";
 
 export const reducer = (state, action) => {
-  console.log(action)
+  console.log(action) /// action vem do dispatch
   switch (action.type){
     case actionsTypesCrease.INCREASE:
       return {...state, counter: state.counter + 1}

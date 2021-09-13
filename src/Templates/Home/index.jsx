@@ -4,11 +4,6 @@ import { Button } from "../../Components/Button";
 import { Heading } from "../../Components/Heading";
 export function Home() {
   const [state, actions] = useCounterContext()
-  useEffect(() => {
-    
-   actions().increase()
-  }, [actions])
-  
   return (
     <div >
       <Heading />
